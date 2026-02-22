@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script src="https://kit.fontawesome.com/7effb304fa.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="Portfoilio.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="navbar">
+
+                    <h1 class="logo">HEISCHIZARA</h1> 
+
+                    <div class="nav-group">
+                        <button class="hamburger" id="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+
+                        <ul id="nav-links">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Skills</a></li>
+                            <li><a href="">Projects</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="home">
+            <div class="container">
+
+                <div class="home-text">
+                    <h1>Welcome to my Portfolio</h1>
+                    <p>I'm a cybersecurity specialist focused on protecting digital assets,
+                       detecting vulnerabilities, and ensuring secure and reliable systems
+                      for individuals and businesses.</p>
+                </div>
+
+                <div class="home-social">
+                   <a href="https://twitter.com/username" target="_blank" aria-label="X / Twitter">
+                     <i class="fa-brands fa-x-twitter"></i>
+                 </a>
+                 <a href="https://www.linkedin.com/in/username" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                 </a>
+                  <a href="https://github.com/username" target="_blank" aria-label="GitHub">
+                      <i class="fa-brands fa-github"></i>
+                 </a>
+                </div>
+
+                
+            </div>
+        </section>
+
+        <script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+    </body>
+</html>
