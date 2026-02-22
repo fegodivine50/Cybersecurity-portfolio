@@ -1,72 +1,264 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <script src="https://kit.fontawesome.com/7effb304fa.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="Portfoilio.css">
-        <title>Portfolio</title>
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <div class="navbar">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                    <h1 class="logo">HEISCHIZARA</h1> 
+    <title>Portfolio</title>
 
-                    <div class="nav-group">
-                        <button class="hamburger" id="hamburger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
+    <link rel="stylesheet" href="Portfoilio.css">
+    <script src="https://kit.fontawesome.com/7effb304fa.js" crossorigin="anonymous"></script>
+</head>
 
-                        <ul id="nav-links">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Skills</a></li>
-                            <li><a href="">Projects</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
+<body>
+
+<header>
+    <div class="container">
+        <div class="navbar">
+
+            <h1 class="logo">HEISCHIZARA</h1>
+
+            <div class="nav-group">
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certifications">Certification</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
             </div>
-        </header>
+        </div>
+    </div>
+</header>
 
-        <section id="home">
-            <div class="container">
+<!-- HOME -->
+<section id="home">
+    <div class="container">
+        <div class="home-content">
 
-                <div class="home-text">
-                    <h1>Welcome to my Portfolio</h1>
-                    <p>I'm a cybersecurity specialist focused on protecting digital assets,
-                       detecting vulnerabilities, and ensuring secure and reliable systems
-                      for individuals and businesses.</p>
-                </div>
+            <div class="home-text">
+                <h1>Welcome to my Portfolio</h1>
+
+                <p>
+                    I'm a cybersecurity specialist focused on protecting digital assets,
+                    detecting vulnerabilities, and ensuring secure and reliable systems
+                    for individuals and businesses.
+                </p>
 
                 <div class="home-social">
-                   <a href="https://twitter.com/username" target="_blank" aria-label="X / Twitter">
-                     <i class="fa-brands fa-x-twitter"></i>
-                 </a>
-                 <a href="https://www.linkedin.com/in/username" target="_blank" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                 </a>
-                  <a href="https://github.com/username" target="_blank" aria-label="GitHub">
-                      <i class="fa-brands fa-github"></i>
-                 </a>
+                    <a href="https://x.com/HeisChizara?s=20" target="_blank" aria-label="X / Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/chizara-chukwudifu-11401333a/" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
                 </div>
 
-                
             </div>
-        </section>
 
-        <script>
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.getElementById("nav-links");
+            <div class="home-image">
+                <img src="portfolio-images/Home.jpeg">
+            </div>
 
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="container about-content">
+
+        <div class="about-text">
+            <h2>About Me</h2>
+
+            <div class="about-part about-part-1">
+                <p>
+                    I’m Chizara, a cybersecurity specialist dedicated to securing web applications,
+                    networks, and digital systems.
+                </p>
+            </div>
+
+            <div class="about-part about-part-2">
+                <p>
+                    My expertise covers
+                    <strong>
+                        Web Security, Network Security, SOC operations,
+                        and Red Team engagements
+                    </strong>,
+                    helping organizations identify vulnerabilities and strengthen their defenses.
+                </p>
+            </div>
+
+            <div class="about-part about-part-3">
+                <p>
+                    Driven by a passion for staying ahead of evolving threats,
+                    I combine analytical thinking with hands-on skills to deliver secure,
+                    reliable, and resilient systems.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="about-image">
+            <img src="portfolio-images/about.jpeg">
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <div class="container skills-content">
+
+        <h2>Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skills-card">
+                <h3>Reconnaissance & Scanning</h3>
+                <p>
+                    Information gathering, vulnerability scanning,
+                    footprinting, and attack surface mapping.
+                </p>
+            </div>
+
+            <div class="skills-card">
+                <h3>Exploitation</h3>
+                <p>
+                    Identifying and leveraging vulnerabilities to simulate
+                    real-world attack scenarios.
+                </p>
+            </div>
+
+            <div class="skills-card">
+                <h3>Analysis</h3>
+                <p>
+                    Log analysis, threat assessment, vulnerability evaluation,
+                    and structured reporting.
+                </p>
+            </div>
+
+            <div class="skills-card">
+                <h3>Operating System Environments</h3>
+                <p>
+                    Experience with Windows and Linux systems,
+                    including hardening and security configuration.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+    <div class="container">
+
+        <h2>Certifications</h2>
+
+        <div class="cert-grid">
+
+            <div class="cert-card">
+                <img src="portfolio-images/certification1.jpeg">
+                <p>Introduction to Cybersecurity</p>
+            </div>
+
+            <div class="cert-card">
+                <img src="portfolio-images/certification2.jpeg">
+                <p>Intelligence Analyst Certification</p>
+            </div>
+
+            <div class="cert-card">
+                <img src="portfolio-images/certification3.jpeg">
+                <p>Network Support and Security</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+
+        <h2>Let's Work Together</h2>
+
+        <div class="contact-grid">
+
+            <div class="contact-left">
+
+                <h3>Get In Touch</h3>
+
+                <div class="info-card">
+                    <p>Email</p>
+                    <span>difuchizara@gmail.com</span>
+                </div>
+
+                <div class="info-card">
+                    <p>Location</p>
+                    <span>Nigeria</span>
+                </div>
+
+                <div class="info-card">
+                    <p>Availability</p>
+                    <span>Open for Freelance</span>
+                </div>
+
+            </div>
+
+            <div class="contact-right">
+
+                <form action="https://formspree.io/f/mgolnzgb" method="POST">
+
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+                    <input type="hidden" name="_subject" value="New Portfolio Message">
+
+                    <button type="submit">Send Message</button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container footer-content">
+
+        <p>© 2026 HEISCHIZARA. All rights reserved.</p>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/chizara-chukwudifu-11401333a/" target="_blank">LinkedIn</a>
+            <a href="https://x.com/HeisChizara?s=20" target="_blank">X</a>
+        </div>
+
+    </div>
+</footer>
+
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
 </script>
 
-    </body>
+</body>
 </html>
